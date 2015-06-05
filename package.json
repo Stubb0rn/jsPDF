@@ -3,8 +3,9 @@
   "version": "1.0.272",
   "homepage": "https://github.com/mrrio/jspdf",
   "description": "PDF Document creation from JavaScript",
-  "main": "dist/jspdf.min.js",
+  "main": "dist/jspdf.debug.js",
   "files": [
+    "dist/jspdf.debug.js",
     "dist/jspdf.min.js",
     "README.md"
   ],
@@ -14,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MrRio/jsPDF.git"
+    "url": "https://github.com/Stubb0rn/jsPDF.git"
   },
   "dependencies": {},
   "devDependencies": {
