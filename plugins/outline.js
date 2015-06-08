@@ -9,8 +9,7 @@
 /**
  * Generates a PDF Outline
  */
-;
-(function(jsPDFAPI) {
+module.exports = function(jsPDFAPI) {
 	'use strict';
 
 	jsPDFAPI.events.push([
@@ -67,12 +66,6 @@
 						pdf.internal.write("(page_" + (i + 1) + ")" + dests[i] + " 0 R");
 					}
 					pdf.internal.write(' ] >>', 'endobj');
-
-					// var kids = pdf.internal.newObject();
-					// pdf.internal.write('<< /Kids [ ' + names2Oid + ' 0 R');
-					// pdf.internal.write(' ] >>', 'endobj');
-
-					namesOid = pdf.internal.newObject();
 					pdf.internal.write('<< /Dests ' + names2Oid + " 0 R");
 					pdf.internal.write('>>', 'endobj');
 				}
@@ -239,4 +232,4 @@
 	]);
 
 	return this;
-})(jsPDF.API);
+};

@@ -6,7 +6,7 @@
  * http://opensource.org/licenses/mit-license
  */
 
-(function (jsPDFAPI) {
+module.exports = function (jsPDFAPI) {
 	'use strict';
 
 	/**
@@ -113,4 +113,4 @@
 
 		return null;
 	};
-})(jsPDF.API);
+};

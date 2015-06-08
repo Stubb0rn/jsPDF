@@ -25,7 +25,7 @@
  * ====================================================================
  */
 
-;(function(API) {
+module.exports = function(API) {
 'use strict'
 
 /**
@@ -322,4 +322,4 @@ API.splitTextToSize = function(text, maxlen, options) {
 	return output
 }
 
-})(jsPDF.API);
+};
