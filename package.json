@@ -5,8 +5,8 @@
   "description": "PDF Document creation from JavaScript",
   "main": "dist/jspdf.debug.js",
   "files": [
-    "dist/jspdf.debug.js",
-    "dist/jspdf.min.js",
+    "dist/jspdf-bundle.js",
+    "dist/jspdf-bundle.js.map",
     "README.md"
   ],
   "keywords": [
@@ -19,7 +19,11 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "local-web-server": "^0.5.19"
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.5",
+    "local-web-server": "^0.5.19",
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.9.10"
   },
   "scripts": {
     "start": "ws"
