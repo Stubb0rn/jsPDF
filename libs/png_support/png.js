@@ -21,6 +21,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
+var FlateStream = require('./zlib').FlateStream;
 
 (function(global) {
   var PNG;
@@ -465,5 +466,5 @@
   })();
 
   global.PNG = PNG;
-
+  module.exports = PNG;
 })(typeof window !== "undefined" && window || this);

@@ -465,3 +465,8 @@ var FlateStream = (function() {
 
   return constructor;
 })();
+
+module.exports = {
+  DecodeStream: DecodeStream,
+  FlateStream: FlateStream
+};

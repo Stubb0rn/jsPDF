@@ -17,6 +17,8 @@
  * require('lib/css_colors.js');
  */
 
+var CssColors = require('../libs/css_colors');
+
 module.exports = function(jsPDFAPI) {
   'use strict';
 

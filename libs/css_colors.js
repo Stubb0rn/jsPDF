@@ -162,3 +162,5 @@ CssColors.colorNameToHex = function(color) {
 
 	return false;
 };
+
+module.exports = CssColors;

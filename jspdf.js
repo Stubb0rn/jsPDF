@@ -55,6 +55,10 @@
  * @returns {jsPDF}
  * @name jsPDF
  */
+
+var saveAs = require('./libs/FileSaver.js/FileSaver').saveAs;
+var Deflater = require('./libs/deflate');
+
 var jsPDF = (function(global) {
 	'use strict';
 	var pdfVersion = '1.3',
@@ -262,7 +266,7 @@ var jsPDF = (function(global) {
 		putPages = function() {
 			var n,p,arr,i,deflater,adler32,adler32cs,wPt,hPt;
 
-			adler32cs = global.adler32cs || jsPDF.adler32cs;
+			adler32cs = require('./libs/adler32cs.js/adler32cs');
 			if (compress && typeof adler32cs === 'undefined') {
 				compress = false;
 			}

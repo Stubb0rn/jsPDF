@@ -23,6 +23,11 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  * ====================================================================
  */
+var PNG = require('../libs/png_support/png');
+var zlib = require('../libs/png_support/zlib');
+var FlateStream = zlib.FlateStream;
+var DecodeStream = zlib.DecodeStream;
+var Deflater = require('../libs/deflate');
 
 module.exports = function(jsPDFAPI) {
   'use strict';

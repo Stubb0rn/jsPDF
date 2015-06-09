@@ -2054,3 +2054,5 @@ var Deflater = (function(obj) {
 		};
 	};
 })(this);
+
+module.exports = Deflater;
