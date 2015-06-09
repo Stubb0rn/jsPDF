@@ -3,7 +3,7 @@
   "version": "1.0.272",
   "homepage": "https://github.com/mrrio/jspdf",
   "description": "PDF Document creation from JavaScript",
-  "main": "dist/jspdf.debug.js",
+  "main": "dist/jspdf-bundle.js",
   "files": [
     "dist/jspdf-bundle.js",
     "dist/jspdf-bundle.js.map",
